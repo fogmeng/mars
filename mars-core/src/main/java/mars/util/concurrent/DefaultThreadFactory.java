@@ -1,6 +1,6 @@
 package mars.util.concurrent;
 
-import mars.util.Assert;
+import mars.util.Asserts;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -36,8 +36,8 @@ public class DefaultThreadFactory implements ThreadFactory {
     }
 
     public DefaultThreadFactory(String poolName, boolean daemon, int priority, ThreadGroup threadGroup) {
-        Assert.notBlank(poolName);
-        Assert.notNull(threadGroup);
+        Asserts.notBlank(poolName);
+        Asserts.notNull(threadGroup);
         if (priority < Thread.MIN_PRIORITY || priority > Thread.MAX_PRIORITY) {
             throw new IllegalArgumentException(
                     "priority: " + priority + " (expected: Thread.MIN_PRIORITY <= priority <= Thread.MAX_PRIORITY)");

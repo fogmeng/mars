@@ -1,4 +1,4 @@
-package mars.demo;
+package mars.demo.api;
 
 import mars.client.ChangeEvent;
 import mars.client.ChangeInfo;
@@ -8,7 +8,7 @@ import mars.client.ConfigService;
 /**
  * @author Ricky Fung
  */
-public class MarConfigDemo {
+public class MarsConfigDemo {
 
     public static void main(String[] args) {
 
