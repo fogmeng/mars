@@ -1,4 +1,4 @@
-package mars.client;
+package mars.demo;
 
 import org.junit.Test;
 

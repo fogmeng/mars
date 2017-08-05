@@ -1,4 +1,6 @@
-package mars.client;
+package mars.client.model;
+
+import mars.client.Environment;
 
 /**
  * @author Ricky Fung

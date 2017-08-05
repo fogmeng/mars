@@ -5,9 +5,11 @@ import java.util.Set;
 /**
  * @author Ricky Fung
  */
-public interface ConfigChangeEvent {
+public interface ChangeEvent {
 
     Set<String> getChangedKeys();
 
-    ConfigChange getChange(String key);
+    ChangeInfo getChangeInfo(String key);
+
+    boolean isChanged(String key);
 }

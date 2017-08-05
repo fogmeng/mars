@@ -3,5 +3,9 @@ package mars.client;
 /**
  * @author Ricky Fung
  */
-public class Environment {
+public enum Environment {
+    DEV,
+    TEST,
+    UAT,
+    PROD;
 }

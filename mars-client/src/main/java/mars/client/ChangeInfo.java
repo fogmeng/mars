@@ -3,41 +3,14 @@ package mars.client;
 /**
  * @author Ricky Fung
  */
-public class ConfigChange {
-    private String propertyName;
-    private String oldValue;
-    private String newValue;
-    private PropertyChangeType changeType;
+public interface ChangeInfo {
 
-    public String getPropertyName() {
-        return propertyName;
-    }
+    String getPropertyName();
 
-    public void setPropertyName(String propertyName) {
-        this.propertyName = propertyName;
-    }
+    String getOldValue();
 
-    public String getOldValue() {
-        return oldValue;
-    }
+    String getNewValue();
 
-    public void setOldValue(String oldValue) {
-        this.oldValue = oldValue;
-    }
+    ChangeType getChangeType();
 
-    public String getNewValue() {
-        return newValue;
-    }
-
-    public void setNewValue(String newValue) {
-        this.newValue = newValue;
-    }
-
-    public PropertyChangeType getChangeType() {
-        return changeType;
-    }
-
-    public void setChangeType(PropertyChangeType changeType) {
-        this.changeType = changeType;
-    }
 }

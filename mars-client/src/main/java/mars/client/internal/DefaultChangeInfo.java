@@ -1,4 +1,7 @@
-package mars.client;
+package mars.client.internal;
+
+import mars.client.ChangeInfo;
+import mars.client.ChangeType;
 
 /**
  * @author Ricky Fung

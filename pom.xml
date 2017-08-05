@@ -13,8 +13,10 @@
 
     <modules>
       <module>mars-core</module>
-	  <module>mars-client</module>
+	  <module>mars-config</module>
 	  <module>mars-admin</module>
+	  <module>mars-client</module>
+      <module>mars-demo</module>
     </modules>
 
     <properties>
